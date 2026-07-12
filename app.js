@@ -8,7 +8,41 @@ const sentences = [
     "I miss your mom",
     "Yo this our year fo sure"
 ];
+ //function to change header 
+ function randomizeHeading() {
+    const randomIndex = Math.floor(Math.random() * sentences.length);
+    const heading = document.getElementById('random-main');
+    if (heading) {
+        heading.textContent = sentences[randomIndex];
+    }
+}
 
+//run it once at load
+window.addEventListener('DOMContentLoaded', randomizeHeading);
+
+//nav function updated to intercept home returns
+
+function navigateTo(targetViewId){
+    //hide all view scetions
+    const views = document.querySelectorAll('.view');
+    views.forEach(view => {
+        view.classList.add('hidden');
+    });
+
+    //reveal the targeted view section
+    const targetView = document.getElementById(targetViewId);
+    if (targetView) {
+        targetView.classList.remove('hidden');
+    }
+
+    //if user is going back home view, pick new random text
+    if (targetViewId ==='home-view') {
+        randomizeHeading();
+    }
+}
+
+
+/*
 window.addEventListener('DOMContentLoaded', () => {
     //picks random index from array
     const randomIndex = Math.floor(Math.random() * sentences.length);
@@ -22,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
+*/
 
 // this function switches between views
 function navigateTo(targetViewId) {
