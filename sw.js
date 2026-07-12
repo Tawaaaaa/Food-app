@@ -1,5 +1,11 @@
 const CACHE_NAME = 'food-app-v1';
-const ASSETS = ['/', '.index.html', '/style.css', '/app,js','/manifest.json'];
+const ASSETS = [
+    '/',
+    '/index.html', 
+    '/style.css',
+    '/app.js',
+    '/manifest.json'
+];
 
 self.addEventListener('install', event => {
     event.waitUntil(
