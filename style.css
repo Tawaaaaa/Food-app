@@ -36,7 +36,6 @@ h2{
     margin-bottom: 25px;
     font-size: 1.5rem;
 }
-
 /*button ko layout*/
 .button-group{
     display: flex;
@@ -62,7 +61,7 @@ h2{
 /* main vs sub butto nstyling */
 
 .primary {
-    background-color: #FF6347;
+    background-color: #85D68E;
     color:white;
 }
 
