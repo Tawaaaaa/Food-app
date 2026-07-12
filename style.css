@@ -18,6 +18,8 @@ body {
     width: 100%;
     max-width: 400px; /*mobile app size frame*/
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*visibility control*/
@@ -26,6 +28,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%; /*  forces the view to fill main contianer fully */
 }
 
 .hidden {
@@ -119,25 +122,30 @@ h2{
 
 
 .food-card-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 16px;
-    padding: 16px;
-    width: 100px;
-    box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
-    border: 1px solid #f0f0f0;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    background-color: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 16px !important;
+    width: 100px !important;
+    max-width: 100% !important;
+    margin: 10px 0 !important;
+    box-shadow: 0 4px 10px rgba(red, green, blue, alpha)!important; 
+    border: 1px solid #f0f0f0 !important;
     
 }
 
 
 /* text area alignemnts */
 .food-info {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    flex-grow: 1 !important;
 }
 
 .food-info h3{
@@ -148,8 +156,11 @@ h2{
 
 .macro-list{
     list-style: none;
-    font-size: 0.85rem;
-    color: #777;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0.85rem !important;
+    color: #777 !important;
+
     display: flex;
     flex-direction: column;
     gap:2px;
@@ -158,14 +169,16 @@ h2{
 /* picture box placeholder stlying */
 
 .food-pic-box{
-    width: 90px;
-    height: 75px;
-    background-color: #FFF3F0;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    width: 70px !important;
+    height: 70px !important;
+    background-color: #FFF3F0 !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    margin-left: 0 !important;
+   /* overflow: hidden;*/
 }
 
 /*random button elemen */
@@ -181,4 +194,8 @@ h2{
     cursor: pointer;
     margin-top: 10px;
     box-shadow: 0 4px 6px rgba(red, green, blue, alpha)
+}
+
+.emoji-pic{
+    font-size: 1.8rem !important;
 }
