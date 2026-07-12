@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-stystem, BlinkMacSystemFont, "Segoe UI", Robot, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container{
+    width: 100%;
+    max-width: 400px; /*mobile app size frame*/
+    padding: 20px;
+}
+
+/*visibility control*/
+.view{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+h2{
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+/*button ko layout*/
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+    width: 100%;
+}
+
+.nav-btn {
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.nav-btn:active {
+    transform: scale (0.97);
+}
+
+/* main vs sub butto nstyling */
+
+.primary {
+    background-color: #FF6347;
+    color:white;
+}
+
+.secondary {
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #e0e0;
+}
+
+
+
+/* navigation helpers */
+
+.back-btn{
+    align-self: flex-start;
+    background: none;
+    border: none; 
+    color: #FF6347;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
