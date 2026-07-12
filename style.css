@@ -86,3 +86,99 @@ h2{
     margin-bottom: 15px;
 }
 
+
+/*-- suggestions page layout*/
+
+.menu-header{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/*scrolable food list elemnts */
+.food-list {
+    width: 100%;
+    display:flex;
+    flex-direction: column; 
+    gap: 15px;
+    margin-bottom: 20px;
+
+    /* lets you scroll if theres hela items */
+    max-height: 55vh;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+/* row card strucutre using flexbox */
+
+
+.food-card-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    width: 100px;
+    box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+    border: 1px solid #f0f0f0;
+    
+}
+
+
+/* text area alignemnts */
+.food-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.food-info h3{
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 700;
+}
+
+.macro-list{
+    list-style: none;
+    font-size: 0.85rem;
+    color: #777;
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+
+/* picture box placeholder stlying */
+
+.food-pic-box{
+    width: 90px;
+    height: 75px;
+    background-color: #FFF3F0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*random button elemen */
+
+.random-pick-btn{
+    background-color: #ffb74d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95 rem;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(red, green, blue, alpha)
+}

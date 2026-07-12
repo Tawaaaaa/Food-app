@@ -4,7 +4,7 @@ const sentences = [
     "Hi retard where you at?",
     "You're not fat you're just retarded",
     "Where you at lesbian?",
-    "Juno says hi",
+    "Anna says hi",
     "I miss your mom",
     "Yo this our year fo sure"
 ];
