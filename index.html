@@ -10,7 +10,7 @@
     <body>
         <main class="app-containter">
 
-            <!-- Home page -->
+<!-- Home page -->
             <section id="home-view" class="view">
                 <h2 id="random-main"> x </h2>
                 <div class="button-group">
@@ -20,31 +20,27 @@
                 </div>
             </section>
 
-            <!-- AT HOME PAGE-->
+<!-- AT HOME PAGE-->
             <section id="atHome" class="view hidden">
                 <button class="back-btn" onclick="navigateTo('home-view')"> Back home </button>
                 <h2> What do you want ?</h2>
                 <div class="button-group">
                     <button class="nav-btn secondary" onclick="navigateTo('Breakfast')">Breakfast</button>
-                    <button class="nav-btn secondary">Lunch</button>
+                    <button class="nav-btn secondary" onclick="navigateTo('Lunch')">Lunch</button>
                     <button class="nav-btn secondary">Dinner</button>
                     <button class="nav-btn secondary">Snacks</button>
                 </div>
             </section>
 
 
-
-
-            <!-- Breakfast page -->
+<!-- Breakfast page (BP)-->
             <section id="Breakfast" class = "view hidden">
                 <button class = "back-btn" onclick="navigateTo('atHome')"> Go Back </button>
                 <div class ="menu-header">
                     <h2> Breakfast Suggestions</h2>
                 </div>
-
-
                 <div class ="food-list">
-
+<!-- BP Food 1  -->
                     <div class ="food-card-row">
                         <div class="food-info">
                             <h3> POOO AND POOO</h3>
@@ -54,10 +50,10 @@
                             </ul>
                         </div>
                         <div class="food-pic-box">
-                            <span class="emoji-pic">😢</span>
+                            <img src="images/food.jpg" alt="chicken" class="food-img">
                         </div>
                     </div>
-
+<!-- BP Food 2 -->
                     <div class ="food-card-row">
                         <div class="food-info">
                             <h3> POOO AND POOO</h3>
@@ -67,10 +63,10 @@
                             </ul>
                         </div>
                         <div class="food-pic-box">
-                            <span class="emoji-pic">😢</span>
+                            <span class="emoji-pic">💩</span>
                         </div>
                     </div>
-
+<!-- BP Food 3-->
                     <div class ="food-card-row">
                         <div class="food-info">
                             <h3> POOO AND POOO</h3>
@@ -84,15 +80,59 @@
                         </div>
                     </div>
                 </div>
-
-                
-
                 <button class = "random-pick-btn"> IDK pick for me</button>                
                 
             </section>
+<!--Lunch page (LP) -->
+            <section id="Lunch" class="view hidden">
+                <button class ="back-btn" onclick="navigateTo('atHome')">Go Back</button>
+                <div class ="menu-header">
+                    <h2> Lunch Suggestion</h2>
+                </div>
+                <div class ="food-list">
+<!-- LP food 1-->
+                    <div class="food-card-row">
+                        <div class ="food-card-info">
+                            <h3> Lunch 1</h3>
+                            <ul class="macro-list">
+                                <li> 21 calories</li>
+                                <li> protien </LI>
+                            </ul>
+                        </div>
+                        <div class="food-pic-box">
+                            <img src ="images\tofubowl.jpg" alt="tofu bowl" class="food-img">
+                        </div>
+                    </div>
 
+<!-- LP food 2-->
+                    <div class ="food-card-row">
+                        <div class="food-info">
+                            <h3> POOO AND POOO</h3>
+                            <ul class=" macro-list">
+                                <li> 67 calories</li>
+                                <li> rich in carb</li>
+                            </ul>
+                        </div>
+                        <div class="food-pic-box">
+                            <img src="images/food.jpg" alt="chicken" class="food-img">
+                        </div>
+                    </div>
+<!-- LP food 3-->
 
+                    <div class ="food-card-row">
+                        <div class="food-info">
+                            <h3> POOO AND POOO</h3>
+                            <ul class=" macro-list">
+                                <li> 67 calories</li>
+                                <li> rich in carb</li>
+                            </ul>
+                        </div>
+                        <div class="food-pic-box">
+                            <img src="images/food.jpg" alt="chicken" class="food-img">
+                        </div>
+                    </div>
 
+            </section>
 
 
 

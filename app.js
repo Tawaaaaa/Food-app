@@ -44,7 +44,7 @@ function navigateTo(targetViewId){
 
 // this function switches between views
 
-
+/*
 //service worker registerstation
 if ('serviceWorker' in navigator) {
     window.addEventListener( 'load', () => {
@@ -55,5 +55,5 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-
+*/
 
