@@ -6,7 +6,11 @@ const sentences = [
     "Where you at lesbian?",
     "Anna says hi",
     "I miss your mom",
-    "Yo this our year fo sure"
+    "Yo this our year fo sure",
+    "HI POOKI",
+    "HI ISABELEAAA",
+    "Yo you stink go shower",
+    "Test test test DEEZ BALLS IN YO MOUTH"
 ];
  //function to change header 
  function randomizeHeading() {
